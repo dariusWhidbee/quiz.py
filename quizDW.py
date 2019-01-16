@@ -37,9 +37,19 @@ q1t = str("""Which gas is formed when a hydrogen bomb is detonated?
 3) Neon
 4) Helium""")
 qlr = 4
+print()
+#q2
+q2c = False
+q2t = str("""Anyone know any jokes about sodium?
+1) Na
+2) Ok
+3) No
+4) Ca""")
+q2r = 1
 
 # runs the question
 run_quest(q1t, q1c, 0, qlr)
+run_quest(q2t, q2c, 0, q2r)
 
 
 # score
