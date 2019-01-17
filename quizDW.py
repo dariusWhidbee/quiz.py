@@ -1,5 +1,5 @@
 # Variables
-score = 0
+grade = 0
 
 def run_quest(quest, check, ansU, ansR):
     print(quest)
@@ -7,10 +7,11 @@ def run_quest(quest, check, ansU, ansR):
         try:
             print()
             ansU = int(input("Responce. > "))
-            # coreect answer "3"
-            if ansU == 1:
-                #global grade
-                #grade += 1
+            print()
+            # coreect answer "1"
+            if ansU == ansR:
+                global grade
+                grade += 1
             # if the user answers the question right the boolean turns true
             # and gets out of the while loop
                 check = True
@@ -52,8 +53,8 @@ run_quest(q1t, q1c, 0, qlr)
 run_quest(q2t, q2c, 0, q2r)
 
 
-# score
-#print()
-#print("Your score",score + 0,"/10")
+# grade
+print()
+print("Your score",grade + 0,"/10")
 
 
