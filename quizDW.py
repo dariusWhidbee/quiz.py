@@ -148,6 +148,21 @@ run_quest(q9t, q9c, 0, q9r)
 run_quest(q10t, q10c, 0, q10r)
 # grade
 print()
-print("Your score",grade + 0,"/10")
+print("Your score",grade * 10,"% / 100%")
+if -1 < grade < 5:
+    print("""Au, get out of here! You're no scientist
+(Get it?)""")
+elif 4 < grade < 8:
+    print("""At least you tried. Just remember
+Old chemists never die, they just stop reacting.""")
+elif 7 < grade < 10:
+    print(""" You know what? You'd be a good chemists""")
+elif grade == 10:
+    print(""" I should go to a chemist like you for my problems
+since you have all the solutions""")
+    
+
+
+
 
 
